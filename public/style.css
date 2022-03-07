@@ -1,0 +1,96 @@
+body{
+  font-family: 'fangsong' !important;
+  min-height: 100vh;
+  background-color: #EEEBDD;
+
+}
+
+:root{
+  --btn-color:#1A374D ;
+}
+
+.container { margin-top: 1em }
+
+td{text-transform: capitalize;}
+
+tbody tr{transition: .5s;}
+
+button:focus{
+  box-shadow: unset !important;
+}
+
+thead{
+  cursor: pointer;
+}
+
+:is(.header, td) button:hover{
+  color: #fff ;
+}
+
+.searchInp{
+  padding: 5px 10px;
+  border: none;
+  border-radius: 20px;
+  text-align: center;
+  caret-color: rgb(139, 139, 139);
+  outline: none;
+  font-weight: bold;
+  font-size: 15px;
+  height: 100%;
+  color: var(--btn-color) !important;
+}
+
+
+.add,.delAll{
+  color: #fff;
+  background-color: var(--btn-color);
+  border-radius: 20px;
+}
+
+.upgrade-btns button{
+  color: var(--btn-color) !important;
+}
+
+.upgrade-btns button:hover{
+  box-shadow: 2px 1px 1px 1px var(--btn-color);
+}
+
+.trn{
+  transition: .5s !important;
+  transform: translateX(100%);
+  opacity: 0;
+}
+
+.modal-content{
+  background-color: #EEEBDD;
+}
+
+.add-form button,.save-btn,.save-btn:hover{
+  background-color: var(--btn-color);
+  border: none;
+}
+
+.add-form input{
+  border: none;
+  border-radius: 5px;
+  padding: 5px 14px;
+  outline: none;
+}
+
+.file-inp{
+  color: transparent;
+  position: relative;
+}
+
+.file-inp::-webkit-file-upload-button{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border: none;
+  background-color: #fff;
+  cursor: pointer;
+  padding: 10px 14px;
+  border-radius: 20px;
+  
+}
